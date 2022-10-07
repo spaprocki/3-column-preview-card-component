@@ -1,0 +1,17 @@
+@media (min-width: 1024px) {
+  body {
+    padding: 171px;
+  }
+
+  .cards-list-container {
+    flex-direction: row;
+  }
+
+  .card-container {
+    width: 307px;
+  }
+
+  .card-container button {
+    margin-top: 83px;
+  }
+}

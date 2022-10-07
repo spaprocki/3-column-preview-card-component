@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Design system styles */
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Lexend Deca', 'sans-serif';
+  font-size: 15px;
+  display: grid;
+  place-content: center;
+  padding: 88px 0;
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  place-content: center;
+}
+
+.cards-list-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--bright-orange);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-container {
+  max-width: 327px;
+  height: 100%;
+  padding: 48px;
+}
+
+.card-container.sedans {
+  background-color: var(--bright-orange);
+}
+
+.card-container.suvs {
+  background-color: var(--dark-cyan);
+  border-radius: 8px;
+}
+
+.card-container.luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.card-container img {
+  max-width: 64px;
+  max-height: 40px;
+}
+
+.card-container h1 {
+  margin-top: 35px;
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+}
+
+.card-container p {
+  margin-top: 25px;
+  line-height: 25px;
+  font-weight: 400;
+  color: var(--transparent-white);
+}
+
+.card-container button {
+  margin-top: 25px;
+  line-height: 25px;
+  background: var(--very-light-gray);
+  font-family: inherit;
+  border: none;
+  border-radius: 25px;
+  padding: 11px 32px;
+  cursor: pointer;
+}
+
+.card-container button:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px 2px var(--very-light-gray) inset;
+  color: var(--very-light-gray);
+}
+
+.card-container.sedans button {
+  color: var(--bright-orange);
+}
+
+.card-container.sedans button:hover {
+  color: var(--very-light-gray);
+}
+
+.card-container.suvs button {
+  color: var(--dark-cyan);
+}
+
+.card-container.suvs button:hover {
+  color: var(--very-light-gray);
+}
+
+.card-container.luxury button {
+  color: var(--very-dark-cyan);
+}
+
+.card-container.luxury button:hover {
+  color: var(--very-light-gray);
+}
+
+.attribution {
+  font-family: 'Montserrat', 'sans-serif';
+  position: absolute;
+  padding: 10px;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  color: var(--dark-cyan);
+}
+
+.attribution a,
+.attribution a:visited {
+  text-decoration: underline;
+  color: var(--dark-cyan);
+}
+
+.attribution a:hover {
+  font-weight: 500;
+}
