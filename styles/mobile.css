@@ -47,6 +47,9 @@ main {
 }
 
 .card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   max-width: 327px;
   height: 100%;
   padding: 48px;
@@ -85,46 +88,48 @@ main {
   line-height: 25px;
   font-weight: 400;
   color: var(--transparent-white);
+  text-align: left;
 }
 
-.card-container button {
+.card-container a {
   margin-top: 25px;
   line-height: 25px;
   background: var(--very-light-gray);
   font-family: inherit;
   border: none;
   border-radius: 25px;
-  padding: 11px 32px;
+  padding: 11px 31.5px;
   cursor: pointer;
+  display: block;
 }
 
-.card-container button:hover {
+.card-container a:hover {
   background: transparent;
   box-shadow: 0px 0px 0px 2px var(--very-light-gray) inset;
   color: var(--very-light-gray);
 }
 
-.card-container.sedans button {
+.card-container.sedans a {
   color: var(--bright-orange);
 }
 
-.card-container.sedans button:hover {
+.card-container.sedans a:hover {
   color: var(--very-light-gray);
 }
 
-.card-container.suvs button {
+.card-container.suvs a {
   color: var(--dark-cyan);
 }
 
-.card-container.suvs button:hover {
+.card-container.suvs a:hover {
   color: var(--very-light-gray);
 }
 
-.card-container.luxury button {
+.card-container.luxury a {
   color: var(--very-dark-cyan);
 }
 
-.card-container.luxury button:hover {
+.card-container.luxury a:hover {
   color: var(--very-light-gray);
 }
 
