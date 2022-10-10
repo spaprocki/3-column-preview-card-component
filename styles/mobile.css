@@ -101,6 +101,7 @@ main {
   padding: 11px 31.5px;
   cursor: pointer;
   display: block;
+  text-decoration: none;
 }
 
 .card-container a:hover {
